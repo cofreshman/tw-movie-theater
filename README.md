@@ -9,6 +9,12 @@
     - todoindex.html
     - todo.css
     - todo.js
+- src:开发文件夹
+    - CSS：CSS文件夹
+    - HTML：page文件夹
+        - page01.html:豆瓣扒的主页html仅供参考
+        - page02.html:豆瓣扒的电影详情页html仅供参考
+    - JS：JS文件夹
 - README.md:开发记录
 
 # 任务安排
@@ -30,7 +36,8 @@
 ### 第四阶段：5月5日(星期日)晚，碰头总结，提交作业
 
 # 实践规划
-- 使用MVVM开发模式：先开发HTML和CSS进行基本视图VIEW开发
+- 第一阶段使用MVVM开发模式：先开发HTML和CSS进行基本视图VIEW开发
+- 第二阶段实现业务逻辑
 
 # 开发记录
 
