@@ -3,6 +3,8 @@
     - page01:主页
     - page02:电影详情页
     - protorype.svg:网站原型页
+    - target.md:目标要求
+    - user-stories.md:用户故事
 - prompt:学习文件
     - doubanAPI.md:豆瓣电影API调用方法
 - referPage:参考网页，用于学习业务逻辑执行
@@ -37,7 +39,7 @@
 
 # 实践规划
 - 第一阶段使用MVVM开发模式：先开发HTML和CSS进行基本视图VIEW开发
-- 第二阶段实现业务逻辑
+- 第二阶段实现业务逻辑：开发JS实现VIEWMODLE，调用解析API实现MODLE
 
 # 开发记录
 
@@ -49,5 +51,12 @@
 # 参考链接
 1. [CSS布局](https://www.yuque.com/fe9/basic/pdrpr8)
 2. [MVVM开发模式](https://www.yuque.com/fe9/basic/ag975a)
-3. [豆瓣API]()
+3. [豆瓣API调用](https://github.com/jokermonn/-Api/blob/master/DoubanMovie.md):已存放在prompt文件夹下
+4. [业务逻辑参考网页](http://www.todolist.cn/):已下载在referPage文件夹下
+5. [数据解析模式参考](https://github.com/tws-practice/tw-movie-theater/blob/master/movies.csv)
+6. [别人的开发仓库](https://github.com/tws-practice/tw-movie-theater/network/members)
+7. [前端九部：前端入门手册](https://www.yuque.com/fe9/basic)
+8. [Devdocs: 快速API文档搜索工具](https://www.yuque.com/fe9/basic/devdocs)
+9. [Devdocs网页版](https://devdocs.io/)
+10. [Devdocs桌面版](https://github.com/egoist/devdocs-desktop/releases)
 
