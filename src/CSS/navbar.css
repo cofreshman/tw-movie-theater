@@ -33,7 +33,7 @@ form {
 
 .inp-btn {
     float: left;
-    width: calc(100% - 218px);
+    width: 70px;
 }
 
 .nav-search .inp-part input {

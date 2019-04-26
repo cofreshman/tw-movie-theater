@@ -4,13 +4,6 @@
     padding: 10px 10% 20px 10%;
 }
 
-h1 {
-    font-size: 26px;
-    font-weight: bold;
-    color: black;
-    line-height: 1.1;
-    padding-left: 10px;
-}
 /* -------------------------------------电影海报和基本信息----------------------------------- */
 .article {
     width: 100%;
@@ -19,7 +12,7 @@ h1 {
 .movie-info {
     display: inline-block;
     width: 100%;
-    padding: 0px 16px;
+    padding: 0px 10%;
 }
 /* 电影数据 */
 .movie-data {
@@ -33,8 +26,43 @@ h1 {
 /* 电影详细介绍 */
 #details {
     float: left;
-    margin-left: 20px;
-    width: calc(100% - 270px);
+    margin-left: 30px;
+    width: calc(100% - 280px);
 }
 
-/* -------------------------------------电影剧情简介----------------------------------- */
+/* -------------------------------------电影剧情简介-------------------------------- */
+/* -------------------------------------电影评论----------------------------------- */
+.review-hd {
+    display: inline-block;
+} 
+
+.review-content {
+    color: white;
+    background: rgb(148, 142, 144);
+    padding: 5px 5px;
+}
+
+/* -------------------------------------电影推荐----------------------------------- */
+
+#recommendations .recommendations-bd dl {
+    display: inline-block;
+    margin: 0 25px 15px 0;
+    padding: 0px;
+}
+
+.recommendations-bd dt {
+    /* height: 161px;
+    width: 115px; */
+    height: 322px;
+    width: 230px;
+    margin-bottom: 8px;
+}
+
+.recommendations-bd dd {
+    font-size: 13px;
+    text-align: center;
+    /* width: 115px; */
+    width: 230px;
+    margin: 0px;
+    padding: 0px;
+}
