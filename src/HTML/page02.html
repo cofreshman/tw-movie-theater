@@ -10,6 +10,7 @@
 
 <body>
     <!-- 导航栏:navbar -->
+    <!-- 搜索按钮貌似有点界面大小不兼容 -->
     <div class="nav-wrap">
         <div class="nav-logo">
             <img src="../../img/tw-logo-white.png" id="tw-logo">
@@ -30,84 +31,50 @@
 
     <!-- 内容栏:content -->
     <div id="content">
-            <!-- 电影名字 -->
+            <!-- 电影名字:根据电影页面发生改变 -->
             <h1>
                 <span property="v:itemreviewed">寻梦环游记 Coco</span>
             </h1>
             
             <div class="article">
-                <!-- 电影信息 -->
-                <div class="indent clearfix">
-                    <div class="subjectwrap clearfix">
-                        <div class="subject clearfix">          
-                            
-                            <div id="mainpic" class="">
-                                <a class="nbgnbg" href="https://movie.douban.com/subject/20495023/photos?type=R"
-                                    title="点击看更多海报">
-                                    <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2503997609.webp"
-                                        title="点击看更多海报" alt="Coco" rel="v:image">
-                                </a>
-                            </div>
-                            <div id="info">
-                                <span>
-                                    <span class="pl">导演</span>: 
-                                    <span class="attrs">
-                                        <a href="/celebrity/1022678/" rel="v:directedBy">李·昂克里奇</a> / 
-                                        <a href="/celebrity/1370425/" rel="v:directedBy">阿德里安·莫利纳</a>
-                                    </span>
-                                </span>
-
-                                <span>
-                                    <span class="pl">编剧</span>: <span class="attrs">
-                                        <a href="/celebrity/1370425/">阿德里安·莫利纳</a> / 
-                                        <a href="/celebrity/1381324/">马修·奥尔德里奇</a> / / 
-                                    </span>
-                                </span>
-
-                                <span class="actor">
-                                    <span class="pl">主演</span>: 
-                                    <span class="attrs">
-                                        <span><a href="/celebrity/1370411/" rel="v:starring">安东尼·冈萨雷斯</a> /</span>
-                                        <span><a href="/celebrity/1329603/" rel="v:starring">芮妮·维克托</a> /</span>
-                                    </span>
-                                </span>
-
-                                <span class="pl">类型:</span> 
-                                <span property="v:genre">喜剧</span> / 
-                                <span property="v:genre">动画</span> / 
-                                <span property="v:genre">音乐</span> / 
-                                <span property="v:genre">奇幻</span>
-
-                                <span class="pl">制片国家/地区:</span> 美国
-
-                                <span class="pl">语言:</span> 英语 / 西班牙语
-
-                                <span class="pl">上映日期:</span> 
-                                <span property="v:initialReleaseDate" content="2017-11-24(中国大陆)">2017-11-24(中国大陆) </span> / 
-                                <span property="v:initialReleaseDate" content="2017-10-20(莫雷利亚电影节)">2017-10-20(莫雷利亚电影节) </span> / 
-                                <span property="v:initialReleaseDate" content="2017-11-22(美国)">2017-11-22(美国)</span>
-
-                                <span class="pl">片长:</span> 
-                                <span property="v:runtime" content="105">105分钟</span>
-                                <span class="pl">又名:</span> 
-                                可可夜总会(台) / 玩转极乐园(港) / 亡灵总动员(豆友译名) / 冥冥之中(豆友译名) / 墨西哥亡灵节 / 可可
-                            </div>
-                        </div>
+                <!-- 电影详细信息 -->
+                <div class="movie-info">
+                    <!-- 电影封面 -->
+                    <div id="post" class="movie-data post-img">
+                        <!-- 电影封面海报和文字内容需要发生更换：src、alt -->
+                        <img src="../../img/coco.webp" alt="Coco" >
+                    </div>
+                    <!-- 电影详细介绍 -->
+                    <div id="details" class="movie-data">
+                        <!-- 人员姓名需要更新 -->
+                        导演 : <span class="director">李·昂克里奇／阿德里安·莫利纳</span>
+                        <br> 
+                        编剧 : <span class="scriptwriter">阿德里安·莫利纳／马修·奥尔德里奇</span>
+                        <br>
+                        主演 : <span class="actor">安东尼·冈萨雷斯／芮妮·维克托</span>
+                        <br>
+                        类型 : <span class="genre">喜剧／音乐／动画／奇幻</span>
+                        <br>
+                        制片国家/地区 : <span class="country">美国</span>
+                        <br>
+                        语言 : <span class="language">英语 / 西班牙语</span>
+                        <br>
+                        上映日期 : <span class="release-date">2017-11-24(中国大陆)／2017-10-20(莫雷利亚电影节)／2017-11-22(美国)</span>
+                        <br>
+                        片长 : <span class="duration">105分钟</span>
                     </div>
                 </div>
 
                 <!-- 剧情简介 -->
-                <div class="related-info" style="margin-bottom:-10px;">
-                    <a name="intro"></a>
+                <div class="related-info">
+                    <!-- 需要更换标题 -->
                     <h2>
-                        <i class="">寻梦环游记的剧情简介</i>
+                        <i class="movie-related-info">寻梦环游记的剧情简介</i>
                     </h2>
-                    <div class="indent" id="link-report">
-                        <span property="v:summary" class=""><br>
-                            　　在一场意外中，米格尔竟然穿越到了亡灵国度之中，在太阳升起之前，他必须得到一位亲人的祝福，否则就将会永远地留在这个世界里。米格尔决定去寻找已故的歌神德拉库斯（本杰明·布拉特
-                            Benjamin Bratt 配音），因为他很有可能就是自己的祖父。途中，米格尔邂逅了落魄乐手埃克托（盖尔·加西亚·贝纳尔 Gael García Bernal
-                            配音），也渐渐发现了德拉库斯隐藏已久的秘密。
-                        </span>
+                    <div class="summary" id="link-report">
+                        　　在一场意外中，米格尔竟然穿越到了亡灵国度之中，在太阳升起之前，他必须得到一位亲人的祝福，否则就将会永远地留在这个世界里。米格尔决定去寻找已故的歌神德拉库斯（本杰明·布拉特
+                        Benjamin Bratt 配音），因为他很有可能就是自己的祖父。途中，米格尔邂逅了落魄乐手埃克托（盖尔·加西亚·贝纳尔 Gael García Bernal
+                        配音），也渐渐发现了德拉库斯隐藏已久的秘密。
                     </div>
                 </div>
 

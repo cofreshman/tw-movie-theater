@@ -1,0 +1,40 @@
+/* 主体 */
+#content {
+    background: rgba(255, 255, 255, 0.98);
+    padding: 10px 10% 20px 10%;
+}
+
+h1 {
+    font-size: 26px;
+    font-weight: bold;
+    color: black;
+    line-height: 1.1;
+    padding-left: 10px;
+}
+/* -------------------------------------电影海报和基本信息----------------------------------- */
+.article {
+    width: 100%;
+}
+/* 电影基本信息 */
+.movie-info {
+    display: inline-block;
+    width: 100%;
+    padding: 0px 16px;
+}
+/* 电影数据 */
+.movie-data {
+    display: inline-block;
+}
+/* 电影海报 */
+.post-img {
+    float: left;
+    max-width: 250px;
+}
+/* 电影详细介绍 */
+#details {
+    float: left;
+    margin-left: 20px;
+    width: calc(100% - 270px);
+}
+
+/* -------------------------------------电影剧情简介----------------------------------- */
