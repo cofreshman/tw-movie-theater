@@ -1,0 +1,18 @@
+div {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+body {
+    font-size: 16px;
+    font: 12px Helvetica,Arial,sans-serif;
+    line-height: 1.62;
+    margin:0;
+    padding: 0;
+    display: block;
+    background: rgb(255, 255, 255);
+}
