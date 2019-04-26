@@ -1,25 +1,26 @@
-<html lang="zh-cmn-Hans" class="ua-mac ua-webkit">
+<!DOCTYPE html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>
-        寻梦环游记
-    </title>
+    <meta content="text/html; charset=utf-8">
+    <title>寻梦环游记</title>
+    <link rel="stylesheet" href="../CSS/page02.css">
 </head>
 
 <body>
     <!-- 导航栏 -->
     <div class="nav-wrap">
         <div class="nav-logo">
-            <a href="https://movie.douban.com">豆瓣电影</a>
+            <img src="../../img/tw-logo-white.png" id="tw-logo">
         </div>
 
         <div class="nav-search">
-            <form action="https://movie.douban.com/subject_search" method="get">
-                <fieldset>
-                    <legend>搜索：</legend>
-                    <div class="inp"><input id="inp-query" name="search_text" placeholder="搜索电影" value=""></div>
-                    <div class="inp-btn"><input type="submit" value="搜索"></div>
-                </fieldset>
+            <!-- 具有搜索功能，点击搜索触发，请在action添加响应 -->
+            <form action="" method="get">
+                    <div class="inp-part inp-text">
+                        <input id="inp-query" name="search_text" placeholder="搜索电影" value="">
+                    </div>
+                    <div class="inp-part inp-btn">
+                        <input type="submit" value="搜索">
+                    </div>
             </form>
         </div>
     </div>
