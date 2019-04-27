@@ -70,3 +70,46 @@
 a {
     text-decoration: none;
 }
+
+
+/* -------------------------------------电影分类区----------------------------------- */
+.tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    background-color: rgb(148, 142, 144);
+    color: white;
+
+    padding: 1% 0 1% 0;
+    margin: 1% 0 1% 0;
+}
+
+.tags dd {
+    padding: 1% 4% 1% 0;
+}
+
+/* -------------------------------------电影展示区----------------------------------- */
+.list-wp {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    color: white;
+
+    padding: 1% 0 1% 0;
+    margin: 1% 0 1% 0;
+}
+
+.list-wp a {
+    padding: 2%;
+}
+
+/* -------------------------------------版权声明区----------------------------------- */
+.footer {
+    background: rgba(47, 47, 47, 0.98);
+    color: white;
+    text-align: center;
+}
