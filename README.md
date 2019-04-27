@@ -54,14 +54,17 @@
 - 第二阶段实现业务逻辑：开发JS实现VIEWMODLE，调用解析API实现MODLE
 
 # 参考链接
+
 1. [CSS布局](https://www.yuque.com/fe9/basic/pdrpr8)
 2. [MVVM开发模式](https://www.yuque.com/fe9/basic/ag975a)
-3. [豆瓣API调用](https://github.com/jokermonn/-Api/blob/master/DoubanMovie.md):已存放在prompt文件夹下
-4. [业务逻辑参考网页](http://www.todolist.cn/):已下载在referPage文件夹下
-5. [数据解析模式参考](https://github.com/tws-practice/tw-movie-theater/blob/master/movies.csv)
-6. [别人的开发仓库](https://github.com/tws-practice/tw-movie-theater/network/members)
-7. [前端九部：前端入门手册](https://www.yuque.com/fe9/basic)
-8. [Devdocs: 快速API文档搜索工具](https://www.yuque.com/fe9/basic/devdocs)
-9. [Devdocs网页版](https://devdocs.io/)
-10. [Devdocs桌面版](https://github.com/egoist/devdocs-desktop/releases)
+3. [豆瓣API调用之一](https://github.com/jokermonn/-Api/blob/master/DoubanMovie.md):已存放在prompt文件夹下
+4. [豆瓣API调用之二](https://blog.csdn.net/hlx20080808/article/details/83274513)
+5. [业务逻辑参考网页](http://www.todolist.cn/):已下载在referPage文件夹下
+6. [数据解析模式参考](https://github.com/tws-practice/tw-movie-theater/blob/master/movies.csv)
+7. [别人的开发仓库](https://github.com/tws-practice/tw-movie-theater/network/members)
+8. [前端九部：前端入门手册](https://www.yuque.com/fe9/basic)
+9. [Devdocs: 快速API文档搜索工具](https://www.yuque.com/fe9/basic/devdocs)
+10. [Devdocs网页版](https://devdocs.io/)
+11. [Devdocs桌面版](https://github.com/egoist/devdocs-desktop/releases)
+12. [JSON在线美化工具](http://jsonviewer.stack.hu/)
 
