@@ -1,3 +1,4 @@
+[思沃影院](https://github.com/cofreshman/tw-movie-theater)
 # 开发记录
 
 | 时间 | 所做工作 | 遇到的问题 | 解决方案 |
@@ -6,6 +7,7 @@
 | 4月26日| 完成page02.html | 感觉页面1和页面2可以公用的部分有很多，没有兼容性设置考虑 | 先这样吧，用谷歌浏览器打开能看就行(~_~;) |
 
 # 文件结构
+- data:csv数据
 - demand:目标要求
     - page01:主页
     - page02:电影详情页
@@ -57,7 +59,7 @@
 
 1. [CSS布局](https://www.yuque.com/fe9/basic/pdrpr8)
 2. [MVVM开发模式](https://www.yuque.com/fe9/basic/ag975a)
-3. [豆瓣API调用之一](https://github.com/jokermonn/-Api/blob/master/DoubanMovie.md):已存放在prompt文件夹下
+3. [豆瓣API调用之一](./prompt/doubanAPI.md):已存放在prompt文件夹下
 4. [豆瓣API调用之二](https://blog.csdn.net/hlx20080808/article/details/83274513)
 5. [业务逻辑参考网页](http://www.todolist.cn/):已下载在referPage文件夹下
 6. [数据解析模式参考](https://github.com/tws-practice/tw-movie-theater/blob/master/movies.csv)
