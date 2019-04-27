@@ -233,6 +233,7 @@ https://api.douban.com/v2/movie/search?q=神秘巨星&start=0&count=4
 </table>
 
 ![titlesearch](../SHOW/titlesearch.png)
+
 **3. 分类组建：**
 > 根据标签搜索：<br>
 > API举例如下：<br>
@@ -335,6 +336,7 @@ https://api.douban.com/v2/movie/search?tag=喜剧&start=0&count=4
 </table>
 
 ![tagsearch](../SHOW/tagsearch.png)
+
 **4. 电影封面或者标题：**
 > 根据电影的ID搜索：<br>
 > API举例如下：<br>
@@ -455,6 +457,7 @@ https://api.douban.com/v2/movie/subject/26942674
 </table>
 
 ![idImg](../SHOW/idImg.png)
+
 **5. 电影长篇评论：**
 > 根据电影的ID搜索：<br>
 > API举例如下：<br>
