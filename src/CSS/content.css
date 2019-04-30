@@ -24,7 +24,7 @@
     max-width: 250px;
 }
 /* 电影详细介绍 */
-#details {
+#movie-details {
     float: left;
     margin-left: 30px;
     width: calc(100% - 280px);

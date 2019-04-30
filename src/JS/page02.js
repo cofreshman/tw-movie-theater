@@ -4,7 +4,7 @@ function  getIdData() {
   var value = '';                       
 
   var reg = new RegExp('id=([^&]*)', 'g');      //使用正则表达式
-  href.replace(reg, function($1) {              //每一个匹配正则表达式的字符串都将调用该函数
+  href.replace(reg, function($0, $1) {              //每一个匹配正则表达式的字符串都将调用该函数
     value = decodeURI($1);                      //$0:匹配的字符串
                                                 //$1:匹配字符串中的第一个参数，一个（），一个参数
                                                 //$2:匹配字符串中的第二参数
@@ -17,20 +17,79 @@ var idUrlBase = "https://api.douban.com/v2/movie/subject/";
 var reviewSuffix = "/reviews?start=0&count=1&apikey=0b2bdeda43b5688921839c8ecb20399b";
 var top250url = "https://api.douban.com/v2/movie/top250?start=0&count=4";
 //获取API信息
-function getJSONP(url, funcHandlerName) {
+var responseHandler01; // 定义一个全局作用域的函数
+function getJSONP01(url, funcHandlerName) {
   //获取电影id所对应的电影信息数据
   //由于API具有访问限制问题，所以请勿重复刷新，否则IP会被禁
   if (url.indexOf('?') === -1) {
-    url += '?callback=responseHandler';
+    url += '?callback=responseHandler01';
   } else {
-    url += '&callback=responseHandler';
+    url += '&callback=responseHandler01';
   }
 
   // 创建script 标签
   var script = document.createElement('script');
 
   // 在函数内部实现包裹函数，因为要用到cb
-  responseHandler = function(json) {
+  responseHandler01 = function(json) {
+    try {
+        //将json数据解析出来，cb为包裹函数
+        funcHandlerName(json)
+    } finally {
+      // 函数调用之后不管发生什么都要移除对应的标签，留着也没用
+      script.parentNode.removeChild(script);
+    }
+  }
+
+  script.setAttribute('src', url)
+  document.body.appendChild(script);
+}
+
+//获取API信息
+var responseHandler02; // 定义一个全局作用域的函数
+function getJSONP02(url, funcHandlerName) {
+  //获取电影id所对应的电影信息数据
+  //由于API具有访问限制问题，所以请勿重复刷新，否则IP会被禁
+  if (url.indexOf('?') === -1) {
+    url += '?callback=responseHandler02';
+  } else {
+    url += '&callback=responseHandler02';
+  }
+
+  // 创建script 标签
+  var script = document.createElement('script');
+
+  // 在函数内部实现包裹函数，因为要用到cb
+  responseHandler02 = function(json) {
+    try {
+        //将json数据解析出来，cb为包裹函数
+        funcHandlerName(json)
+    } finally {
+      // 函数调用之后不管发生什么都要移除对应的标签，留着也没用
+      script.parentNode.removeChild(script);
+    }
+  }
+
+  script.setAttribute('src', url)
+  document.body.appendChild(script);
+}
+
+//获取API信息
+var responseHandler03; // 定义一个全局作用域的函数
+function getJSONP03(url, funcHandlerName) {
+  //获取电影id所对应的电影信息数据
+  //由于API具有访问限制问题，所以请勿重复刷新，否则IP会被禁
+  if (url.indexOf('?') === -1) {
+    url += '?callback=responseHandler03';
+  } else {
+    url += '&callback=responseHandler03';
+  }
+
+  // 创建script 标签
+  var script = document.createElement('script');
+
+  // 在函数内部实现包裹函数，因为要用到cb
+  responseHandler03 = function(json) {
     try {
         //将json数据解析出来，cb为包裹函数
         funcHandlerName(json)
@@ -115,7 +174,6 @@ function updateReviewInfo(ele) {
   var reviewContentHtml = `
 <h3>${ele.reviews[0].title}</h3>
 <div class="review-content">${ele.reviews[0].content}</div>`;
-
     document.getElementById("reviewer-content").innerHTML = reviewContentHtml;                   //评论信息
 }
 
@@ -148,16 +206,16 @@ function init (){
   //生成电影基本信息链接
   var idInfourl = idUrlBase + idData;   // https://api.douban.com/v2/movie/subject/26942674
   //使用URL访问API获取JSON数据，并将json数据用于创建movie-info和related-info:电影基本信息和电影简介
-  getJSONP(idInfourl, (e) => {updateBasicInfo(e)});
+  getJSONP01(idInfourl, (a) => {updateBasicInfo(a)});
 
   //初始化电影评论，只加载一条信息
   //https://api.douban.com/v2/movie/subject/26942674/reviews?start=0&count=1&apikey=0b2bdeda43b5688921839c8ecb20399b
   var reviewInfoUrl = idUrlBase + idData + reviewSuffix;
-  getJSONP(reviewInfoUrl, (e) => {updateReviewInfo(e)});
+  getJSONP02(reviewInfoUrl, (b) => {updateReviewInfo(b)});
 
   //获取电影推荐，只要图片、标题、ID
   //https://api.douban.com/v2/movie/top250?start=0&count=4
-  getJSONP(top250url, (e) => {updateRecommendations(e)});
+  getJSONP03(top250url, (c) => {updateRecommendations(c)});
 
 }
 
