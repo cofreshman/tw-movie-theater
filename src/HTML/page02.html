@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <head>
     <meta content="charset=utf-8">
-    <!-- Title:根据电影名字进行更改 -->
-    <title>寻梦环游记</title>
+    <title>电影详情</title>
     <link rel="stylesheet" href="../CSS/common.css">
     <link rel="stylesheet" href="../CSS/content.css">
     <link rel="stylesheet" href="../CSS/navbar.css">
@@ -34,56 +33,35 @@
     <div id="content">
         <!-- 电影名字:根据电影页面发生改变 -->
         <h1>
-            <span property="v:itemreviewed">寻梦环游记 Coco</span>
+            <span id="movie-title"></span>
         </h1>
 
         <div class="article">
             <!-- 电影详细信息 -->
             <div class="part-layer movie-info">
                 <!-- 电影封面 -->
-                <div id="post" class="movie-data post-img">
+                <div id="movie-post" class="movie-data post-img">
                     <!-- 电影封面海报和文字内容需要发生更换：src、alt -->
-                    <img src="../../img/coco.webp" alt="Coco">
                 </div>
                 <!-- 电影详细介绍 -->
-                <div id="details" class="movie-data">
-                    <!-- 人员姓名需要更新 -->
-                    导演 : <span class="director">李·昂克里奇／阿德里安·莫利纳</span>
-                    <br>
-                    编剧 : <span class="scriptwriter">阿德里安·莫利纳／马修·奥尔德里奇</span>
-                    <br>
-                    主演 : <span class="actor">安东尼·冈萨雷斯／芮妮·维克托</span>
-                    <br>
-                    类型 : <span class="genre">喜剧／音乐／动画／奇幻</span>
-                    <br>
-                    制片国家/地区 : <span class="country">美国</span>
-                    <br>
-                    语言 : <span class="language">英语 / 西班牙语</span>
-                    <br>
-                    上映日期 : <span class="release-date">2017-11-24(中国大陆)／2017-10-20(莫雷利亚电影节)／2017-11-22(美国)</span>
-                    <br>
-                    片长 : <span class="duration">105分钟</span>
+                <div id="movie-details" class="movie-data">
                 </div>
             </div>
 
             <!-- 剧情简介 -->
             <div class="part-layer related-info">
-                <!-- 需要更换标题 -->
                 <h2>
-                    <i class="movie-related-info">寻梦环游记的剧情简介</i>
+                    <i class="movie-related-info" id="summary-title">剧情简介</i>
                 </h2>
                 <!-- 需要更新剧情简介信息 -->
-                <div class="summary" id="link-report">
-                    　　在一场意外中，米格尔竟然穿越到了亡灵国度之中，在太阳升起之前，他必须得到一位亲人的祝福，否则就将会永远地留在这个世界里。米格尔决定去寻找已故的歌神德拉库斯（本杰明·布拉特
-                    Benjamin Bratt 配音），因为他很有可能就是自己的祖父。途中，米格尔邂逅了落魄乐手埃克托（盖尔·加西亚·贝纳尔 Gael García Bernal
-                    配音），也渐渐发现了德拉库斯隐藏已久的秘密。
+                <div class="summary" id="summary-content">
                 </div>
             </div>
 
             <!-- 电影评论 -->
             <section class="part-layer reviews">
                 <header>
-                    <h2><i class="movie-review">寻梦环游记的影评</i></h2>
+                    <h2><i class="movie-review">长篇影评</i></h2>
                 </header>
 
                 <!-- 评论列表 -->
@@ -91,19 +69,10 @@
                     <!-- 评论 -->
                     <div class="review-item">
                         <!-- 评论头 -->
-                        <header class="review-hd">
-                            <span><img width="24" height="24" src="../../img/user.jpg"></span>
-                            <span class="review-user">吉祥鹿</span>
-                            <span class="review-date">2017-10-30 04:35:39</span>
+                        <header class="review-hd" id="reviewer-info">
                         </header>
                         <!-- 评论内容 -->
-                        <div class="review-bd">
-                            <h3>或许你会想了解的电影里的墨西哥元素</h3>
-                            <div class="review-content">
-                                因为这样一部电影，对墨国即将到来的亡灵节有了很深的认同感。皮克斯的主创人员做了很充分的前期准备，六年的制作
-                                让影片美妙地融合了很多墨西哥元素，又讲好了一个动人的故事。正如导演所说“想展现一个和新闻里不一样的墨西哥”，
-                                这篇文章如果能让大家对墨西哥多了一点点点了...
-                            </div>
+                        <div class="review-bd" id="review-content">
                         </div>
                     </div>
                 </div>
@@ -116,44 +85,7 @@
                 <h2>
                     <i class="">喜欢这部电影的人也喜欢</i>
                 </h2>
-                <div class="recommendations-bd">
-                    <dl class="recommendation" data-id="10231">
-                        <!-- 电影海报 -->
-                        <dt>
-                            <a href="https://"><img src="../../img/totoro.webp" alt="龙猫"></a>
-                        </dt>
-                        <!-- 电影名 -->
-                        <dd>
-                            <a href="https://" class="">龙猫</a>
-                        </dd>
-                    </dl>
-
-                    <dl class="recommendation" data-id="10232">
-                        <dt>
-                            <a href="https://"><img src="../../img/find.webp" alt="千与千寻" class=""></a>
-                        </dt>
-                        <dd>
-                            <a href="https://" class="">千与千寻</a>
-                        </dd>
-                    </dl>
-
-                    <dl class="recommendation" data-id="10233">
-                        <dt>
-                            <a href="https://"><img src="../../img/thief.webp" alt="小偷家族" class=""></a>
-                        </dt>
-                        <dd>
-                            <a href="https://" class="">小偷家族</a>
-                        </dd>
-                    </dl>
-
-                    <dl class="recommendation" data-id="10234">
-                        <dt>
-                            <a href="https://"><img src="../../img/dad.webp" alt="摔跤吧！爸爸" class=""></a>
-                        </dt>
-                        <dd>
-                            <a href="https://" class="">摔跤吧！爸爸</a>
-                        </dd>
-                    </dl>
+                <div class="recommendations-bd" id="recommendations-list">
                 </div>
             </div>
         </div>
