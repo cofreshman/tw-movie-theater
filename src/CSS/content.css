@@ -65,6 +65,7 @@
     width: 230px;
     margin: 0px;
     padding: 0px;
+    cursor: pointer;
 }
 
 a {
@@ -88,6 +89,7 @@ a {
 
 .tags dd {
     padding: 1% 4% 1% 0;
+    cursor: pointer;
 }
 
 /* -------------------------------------电影展示区----------------------------------- */

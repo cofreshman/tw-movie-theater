@@ -164,17 +164,22 @@ function updateBasicInfo(ele) {
 }
 
 function updateReviewInfo(ele) {
-  var reviewInfoHtml = `
+  if(ele.reviews[0] != null)
+  {
+    var reviewInfoHtml = `
 <span><img width="24" height="24" src=${ele.reviews[0].author.avatar}></span>
 <span class="review-user">${ele.reviews[0].author.name}</span>
 <span class="review-date">${ele.reviews[0].created_at}</span>`;
-
-  document.getElementById("reviewer-info").innerHTML = reviewInfoHtml;                   //评论者信息
-
-  var reviewContentHtml = `
+    
+      document.getElementById("reviewer-info").innerHTML = reviewInfoHtml;                   //评论者信息
+    
+      var reviewContentHtml = `
 <h3>${ele.reviews[0].title}</h3>
 <div class="review-content">${ele.reviews[0].content}</div>`;
-    document.getElementById("reviewer-content").innerHTML = reviewContentHtml;                   //评论信息
+        document.getElementById("reviewer-content").innerHTML = reviewContentHtml; 
+  } else {
+    document.getElementById("reviewer-info").innerHTML = "无评论";
+  }
 }
 
 function creatRecommendations(id, imgurl, title) {
@@ -222,3 +227,17 @@ function init (){
 window.onload = function () {
   init();
 }
+
+//====================================================
+//搜索栏触发事件
+function searchAction () {
+  //第一步生成跳转链接并传递数据
+  var title = document.getElementById("inp-query").value;
+  //下面少一个判定条件，如果输入为空格如何清除
+  if(title == null || title == "")
+  {
+    alert("请输入搜索内容！！！");
+    return false;
+  }
+  window.location.assign("./page01.html?title=" + title);
+};
