@@ -128,6 +128,17 @@ function getJSONP(url, cb) {
 getJSONP('https://api.douban.com/v2/movie/in_theaters?city=北京&start=30&count=25', (e) => {console.log(e)})
 ```
 
+二 [LocalStorage存储](https://www.jianshu.com/p/1f32c9a96064)
+```
+var jsonData = {'name': '张三', 'age': 29}; // 定义一个JSON对象
+
+var str_jsonData = JSON.stringify(jsonData);
+localStorage.setItem('localData', str_jsonData); // 存储字符串数据到本地
+
+var getLocalData = localStorage.getItem('localData'); // 读取字符串数据
+var jsonObj = JSON.parse(getLocalData);
+```
+
 你写这两个函数，实现这个功能：点一下搜索按钮，电影显示去发生变化这一功能
 id, movie-imgurl, movie-title, average-rate
 id=38743105
