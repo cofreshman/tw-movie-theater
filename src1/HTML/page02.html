@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<head>
+    <meta content="charset=utf-8">
+    <!-- Title:根据电影名字进行更改 -->
+    <title>寻梦环游记</title>
+    <link rel="stylesheet" href="../CSS/common.css">
+    <link rel="stylesheet" href="../CSS/content.css">
+    <link rel="stylesheet" href="../CSS/navbar.css">
+    <script src="../js/page02.js"></script>
+</head>
+
+<body>
+    <!-- 导航栏:navbar -->
+    <!-- 搜索按钮貌似有点界面大小不兼容 -->
+    <div class="nav-wrap">
+        <div class="nav-logo">
+            <a href="page01.html"><img src="../../img/tw-logo-white.png" id="tw-logo"></a>
+        </div>
+
+        <div class="nav-search">
+            <!-- 具有搜索功能，点击搜索触发，请在action添加响应网页的网址 -->
+            <form action="" method="get">
+                <div class="inp-part inp-text">
+                    <input id="inp-query" name="search_text" placeholder="搜索电影" value="">
+                </div>
+                <div class="inp-part inp-btn">
+                    <input type="submit" value="搜索">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- 内容栏:content -->
+    <div id="content">
+        <!-- 电影名字:根据电影页面发生改变 -->
+        <h1>
+            <span id='title' property="v:itemreviewed"></span>
+        </h1>
+
+        <div class="article">
+            <!-- 电影详细信息 -->
+            <div class="part-layer movie-info">
+                <!-- 电影封面 -->
+                <div id="post" class="movie-data post-img">
+                    <!-- 电影封面海报和文字内容需要发生更换：src、alt -->
+                    <img src="../../img/blank.jpg" alt="">
+                </div>
+                <!-- 电影详细介绍 -->
+                <div id="details" class="movie-data">
+                    <!-- 人员姓名需要更新 -->
+                    <b>导演 : </b><span class="director"></span>
+                    <br>
+                    <b>编剧 : </b><span class="scriptwriter"></span>
+                    <br>
+                    <b>主演 : </b><span class="actor"></span>
+                    <br>
+                    <b>类型 : </b><span class="genre"></span>
+                    <br>
+                    <b>制片国家/地区 : </b><span class="country"></span>
+                    <br>
+                    <b>语言 :</b> <span class="language"></span>
+                    <br>
+                    <b>上映日期 : </b><span class="release-date"></span>
+                    <br>
+                    <b>片长 : </b><span class="duration"></span>
+                </div>
+            </div>
+
+            <!-- 剧情简介 -->
+            <div class="part-layer related-info">
+                <!-- 需要更换标题 -->
+                <h2>
+                    <i class="movie-related-info">剧情简介</i>
+                </h2>
+                <!-- 需要更新剧情简介信息 -->
+                <div class="summary" id="link-report">
+                </div>
+            </div>
+
+            <!-- 电影评论 -->
+            <section class="part-layer reviews">
+                <header>
+                    <h2><i class="movie-review"></i>影评</h2>
+                </header>
+
+                <!-- 评论列表 -->
+                <div class="review-list">
+                    <!-- 评论 -->
+                    <div class="review-item">
+                        <!-- 评论头 -->
+                        <header class="review-hd">
+                            <span><img width="24" height="24" src="../../img/user.jpg"></span>
+                            <span class="review-user"></span>
+                            <span class="review-date"></span>
+                        </header>
+                        <!-- 评论内容 -->
+                        <div class="review-content">
+                        </div>
+                    </div>
+
+                    <div class="review-item">
+                        <!-- 评论头 -->
+                        <header class="review-hd">
+                            <span><img width="24" height="24" src="../../img/user.jpg"></span>
+                            <span class="review-user"></span>
+                            <span class="review-date"></span>
+                        </header>
+                        <!-- 评论内容 -->
+                        <div class="review-content">
+                        </div>
+                    </div>
+
+                    <div class="review-item">
+                        <!-- 评论头 -->
+                        <header class="review-hd">
+                            <span><img width="24" height="24" src="../../img/user.jpg"></span>
+                            <span class="review-user"></span>
+                            <span class="review-date"></span>
+                        </header>
+                        <!-- 评论内容 -->
+                        <div class="review-content">
+                        </div>
+                    </div>
+
+                    <div class="review-item">
+                        <!-- 评论头 -->
+                        <header class="review-hd">
+                            <span><img width="24" height="24" src="../../img/user.jpg"></span>
+                            <span class="review-user"></span>
+                            <span class="review-date"></span>
+                        </header>
+                        <!-- 评论内容 -->
+                        <div class="review-content">
+                        </div>
+                    </div>
+
+                    <div class="review-item">
+                        <!-- 评论头 -->
+                        <header class="review-hd">
+                            <span><img width="24" height="24" src="../../img/user.jpg"></span>
+                            <span class="review-user"></span>
+                            <span class="review-date"></span>
+                        </header>
+                        <!-- 评论内容 -->
+                        <div class="review-content">
+                        </div>
+                    </div>
+                </div>
+                <!-- 更多评论 -->
+                <!-- <p class="more-reviews"><a href="reviews">更多影评5368篇</a></p> -->
+            </section>
+
+            <!-- 电影推荐 -->
+            <div id="recommendations" class="part-layer recommendations">
+                <h2>
+                    <i class="">Top250</i>
+                </h2>
+                <div class="recommendations-bd">
+                    <a href="#" class="item">
+                        <div data-id="#" class="cover-wp">
+                            <span class="pic"><img
+                                    src="../../img/blank.jpg"
+                                    alt="">
+                            </span>
+                        </div>
+                        <p>
+                            <span class="title"></span>
+                        </p>
+                    </a>
+
+                    <a href="#" class="item">
+                        <div data-id="#" class="cover-wp">
+                            <span class="pic"><img
+                                    src="../../img/blank.jpg"
+                                    alt="">
+                            </span>
+                        </div>
+                        <p>
+                            <span class="title"></span>
+                        </p>
+                    </a>
+
+                    <a href="#" class="item">
+                        <div data-id="#" class="cover-wp">
+                            <span class="pic"><img
+                                    src="../../img/blank.jpg"
+                                    alt="">
+                            </span>
+                        </div>
+                        <p>
+                            <span class="title"></span>
+                        </p>
+                    </a>
+
+                    <a href="#" class="item">
+                        <div data-id="#" class="cover-wp">
+                            <span class="pic"><img
+                                    src="../../img/blank.jpg"
+                                    alt="">
+                            </span>
+                        </div>
+                        <p>
+                            <span class="title"></span>
+                        </p>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Copyright ©2019 Group-ZC
+    </div>
+
+</body>
+
+</html>

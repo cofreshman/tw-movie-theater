@@ -1,0 +1,53 @@
+.nav-wrap {
+    background: rgba(47, 47, 47, 0.98);
+    height: 36px;
+    padding: 10px 10px 10px 10px;
+}
+
+.nav-logo {
+    float: left;
+    height: 100%;
+}
+
+.nav-search {
+    float:right;
+    height: 100%;
+    min-width: 20%;
+    border: none;
+}
+
+form {
+    height:100%;
+
+}
+
+.inp-part {
+    height: 100%;
+    display: inline-block;
+}
+
+.inp-text {
+    float: left;
+    width: 218px;
+}
+
+.inp-btn {
+    float: left;
+    width: 70px;
+}
+
+.nav-search .inp-part input {
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    border: 0px;
+    padding: 0px;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.24), 0 1px 6px rgba(0, 0, 0, 0.45) inset;
+    font-size: 20px;
+    font: 12px Helvetica,Arial,sans-serif;
+}
+
+.nav-search .inp-text input {
+    text-indent: 5px;
+}
